@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Stone Tilemap
   layers:
   - Default
   - TransparentFX
@@ -13,10 +14,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Ground
+  - Equipment
+  - Background
   - 
   - 
   - 
@@ -40,4 +41,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3364314485
+    locked: 0
+  - name: Ground
+    uniqueID: 3763355147
+    locked: 0
+  - name: Player
+    uniqueID: 884040039
+    locked: 0
+  - name: Equipment
+    uniqueID: 2955077615
     locked: 0
