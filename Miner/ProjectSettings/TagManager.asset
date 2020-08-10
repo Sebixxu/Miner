@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Stone Tilemap
+  - Ore
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Ground
   - Equipment
   - Background
-  - 
+  - Ores
   - 
   - 
   - 
@@ -47,6 +48,9 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 3763355147
+    locked: 0
+  - name: Ores
+    uniqueID: 2764621721
     locked: 0
   - name: Player
     uniqueID: 884040039

@@ -10,6 +10,6 @@ public class GridData
     public GridData(Vector3Int position, int durability)
     {
         Position = position;
-        Durability = durability;    
+        Durability = durability;
     }
 }

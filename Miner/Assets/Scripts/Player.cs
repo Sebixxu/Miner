@@ -9,7 +9,8 @@ public class Player : MonoBehaviour
     private Tilemap _tilemap;
     private List<GridData> _gridCache;
 
-    [SerializeField] private int durability = 1;
+    [field: SerializeField] public float MiningRange { get; private set; } = 2.5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,33 +24,5 @@ public class Player : MonoBehaviour
     {
 
 
-    }
-
-    void OnMouseDown()
-    {
-        ProcessMineClick();
-    }
-
-    private void ProcessMineClick()
-    {
-        var clickedCellPosition = GetClickedCellPosition();
-
-        var gridData = _gridCache.FirstOrDefault(x => x.Position == clickedCellPosition);
-        if (gridData == null)
-        {
-            _gridCache.Add(new GridData(clickedCellPosition, 1));
-        }
-        else
-        {
-            gridData.Durability--;
-        }
-
-        if (gridData?.Durability <= 0)
-            _tilemap.SetTile(clickedCellPosition, null);
-    }
-
-    private Vector3Int GetClickedCellPosition()
-    {
-        return _tilemap.WorldToCell(Camera.main.ScreenToWorldPoint(Input.mousePosition));
     }
 }
